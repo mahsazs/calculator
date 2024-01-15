@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>calculator</title>
+</head>
+<body>
+
+<main class="flex flex-col justify-center items-center min-h-screen">
+    <div class="countainer w-3/4 h-96 bg-sky-100 rounded-2xl md:w-1/6 ">
+
+        <div id="screen" class="screen h-20 bg-slate-300 rounded-2xl my-3 mx-3 p-2.5">
+            <!-- <span id="signElem" class="bg-sky-100"></span> -->
+        </div>
+        
+
+        <div class="btns my-3 mx-3">
+            <div class="grid grid-cols-4 gap-1 my-1 h-11 ">
+                <button id="reset" class="bg-slate-200 rounded-2xl">AC</button>
+                <button id="sign" class="bg-slate-200 rounded-2xl">+-</button>
+                <button id="percent" class="bg-slate-200 rounded-2xl">%</button>
+                <button id="divide" class="bg-slate-200 rounded-2xl">/</button>
+            </div>
+            <div class="grid grid-cols-4 gap-1 my-3 h-11">
+                <button value="7" class="number bg-slate-200 rounded-2xl">7</button>
+                <button value="8" class="number bg-slate-200 rounded-2xl">8</button>
+                <button value="9" class="number bg-slate-200 rounded-2xl">9</button>
+                <button id="multiply" class="bg-slate-200 rounded-2xl">X</button>
+            </div>
+            <div class="grid grid-cols-4 gap-1 my-3 h-11">
+                <button value="4" class="number bg-slate-200 rounded-2xl">4</button>
+                <button value="5" class="number bg-slate-200 rounded-2xl">5</button>
+                <button value="6" class="number bg-slate-200 rounded-2xl">6</button>
+                <button id="minus" class="bg-slate-200 rounded-2xl">-</button>
+            </div>
+            <div class="grid grid-cols-4 gap-1 my-3 h-11">
+                <button value="1" class="number bg-slate-200 rounded-2xl">1</button>
+                <button value="2" class="number bg-slate-200 rounded-2xl">2</button>
+                <button value="3" class="number bg-slate-200 rounded-2xl">3</button>
+                <button id="plus" class="bg-slate-200 rounded-2xl">+</button>
+            </div>
+            <div class="grid grid-cols-4 gap-1 my-3 h-11">
+                <button value="0" class="number col-span-2 bg-slate-200 rounded-2xl">0</button>
+                <button id="point" class="bg-slate-200 rounded-2xl">.</button>
+                <button id="equal" class="bg-slate-200 rounded-2xl">=</button>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+<script src="app.js"></script>
+</html>
